@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Hangman</title>
+        <link href="/styles/styles.css" rel="stylesheet">                 <!-- href - the src of the head, rel - the relationship of the link with the body -->
+        <link href="/images/hangman.png" rel="icon">
+    </head>
+    <body>
+        
+        <div>
+            <h2>Hangman</h2> <br> <br>
+            <div id="puzzle" class="puzzle"></div> 
+            <p id="guesses"></p>  <br>
+            <h4 id="bad-guesses">Bad guesses: </h4>  <br>
+            <button id="reset" class="button">Reset</button> 
+        </div>
+        
+        <script src="/scripts/requests.js"></script>
+        <script src = "/scripts/hangman.js"></script>
+        <script src="/scripts/app.js"></script>
+    </body>
+</html>

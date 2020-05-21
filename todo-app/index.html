@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-Do</title>
+    <link href="/styles/styles.css" rel="stylesheet">
+    <link href="/images/to-do-list.png" rel="icon">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">To-do List</h1>
+            <h2 class="header__subtitle">What do you need to do?</h2>
+        </div>
+    </div>
+
+    <div class="actions">
+        <div class="actions__container">
+            <input id="filter-input" class="input" type="text" placeholder="Type filter here">
+            <label class="checkbox">
+               <input type= "checkbox" id="hide-completed"> Hide Completed
+            </label>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div id="todos"></div>
+        <form id="add-todo">                                                                 <!--זה מכלול של אלמנטים הקשורים זה בזה form-->     
+            <br>                                       
+            <input type="text" class="input" placeholder = "Enter something to do" name="addTodo">   <!-- Javascript קובע את השם של האלמנט ב name -->
+            <button class="button">Add</button>
+            <button id="clear-all" class="button button--secondary">Clear All</button>
+        </form>
+        
+    </div>
+
+    <script src ="/scripts/uuidv4.js"></script>
+    <script src="/scripts/todo-funcs.js"></script>
+    <script src="/scripts/todo-app.js"></script>
+</body>
+</html>

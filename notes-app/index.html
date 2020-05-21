@@ -1,0 +1,41 @@
+<!DOCTYPE html>      <!--html הכרזנו שהמסמך הוא מסוג-->
+
+<html>
+    <head>
+        <title>Notes</title>
+        <link href="/styles/styles.css" rel="stylesheet">
+        <link href="/images/notes.jpg" rel="icon">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">Notes App</h1>  
+                <h2 class="header__subtitle">Take notes and never forget</h2> 
+            </div>
+        </div>
+        <div class="actions">
+            <div class="actions__container">
+                <input id="search-text" type="text" class ="input" placeholder="Filter" >
+                <label>
+                    <select id="filter-by" class="dropdown">                          <!-- אלמנט המאפשר לנו לבחור מבין מספר אופציות,Dropdown זהו -->
+                    <option value="byEdited">Sort by last edited</option>         <!--הערך יעזור לנו להתייחס לאופציה בתוכנה, במקום שנצטרך לכתוב את תוכן האופציה עצמה-->
+                    <option value="byCreated">Sort by recently created</option>
+                    <option value="byAlphabet">Sort by alphabetically</option>
+                </select>
+                </label>
+            </div>
+        </div>    
+        <div class="container">
+            <div id="notes"></div>       
+            <p></p>                                  
+            <button id="create-note" class="button">Create Note</button>            <!--בו נשתמש כאשר נרצה לגשת אל הכפתור בתוכנה id הכפתור יזוהה לפי-->
+        </div>
+
+        <script src="/scripts/uuidv4.js"></script>
+        <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+        <script src="/scripts/notes-functions.js"></script> 
+        <script src="/scripts/notes-app.js"></script>    <!--This is Javascript. It would be more ideal to write this code in a different file.-->
+    </body>
+</html>
